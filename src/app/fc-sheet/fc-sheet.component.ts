@@ -31,7 +31,7 @@ export const tabOptions: TabOption[] = [
 @Component({
     selector: 'fc-sheet',
     templateUrl: './fc-sheet.component.html',
-    styleUrls: [`./fc-sheet.component.scss`]
+    styleUrls: [`./fc-sheet.component.css`]
 })
 export class FcSheetComponent {
     spreadBackColor = 'aliceblue';

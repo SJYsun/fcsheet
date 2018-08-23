@@ -6,7 +6,7 @@ export interface fontOption{
 @Component({
     selector: 'font-board',
     templateUrl: './font-board.component.html',
-    styleUrls: [`./font-board.component.scss`]
+    styleUrls: [`./font-board.component.css`]
 })
 export class fontBoardComponent {
     selectedFont:string='Arial';

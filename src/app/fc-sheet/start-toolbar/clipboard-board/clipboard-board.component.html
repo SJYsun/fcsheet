@@ -1,7 +1,7 @@
 <div class="board-container">
     <div class="board-content-rcontainer">
-        <div class="board-lcontent-container">
-            <button class="board-btitle-btn" role="button" (click)="event($event)">
+        <div class="board-lcontent-container" #div>
+            <button [(colorPicker)]="color" cpOKButton="true" cpDialogDisplay="popup" [style.background]="color" class="board-btitle-btn" role="button" (click)="event($event,div)">
                 <span class="board-paste-image"></span>
                 <span class="btn-text">
                     粘贴
@@ -26,3 +26,8 @@
         <div class="board-bottom-title "> 剪贴板 </div>
     </div>
 </div>
+<ng-template #div>
+    <div style="width:300px;height:300px">
+        <span>Good Job!</span>
+    </div>
+</ng-template>

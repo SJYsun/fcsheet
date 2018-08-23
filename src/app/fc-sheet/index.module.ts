@@ -15,12 +15,17 @@ import { StatusBarComponent } from './status-bar/status-bar.component';
 import { fontBoardComponent } from './start-toolbar/font-board/font-board.component';
 import { AlignmentBoardComponent } from './start-toolbar/alignment-board/alignment-board.component';
 import { NumberBoardComponent } from './start-toolbar/number-board/number-board.component';
+import { DialogModule } from '../dialog';
+import { ColorPickerModule } from '../color-picker/color-picker.module';
+import { ColorPickerComponent } from '../color-picker/color-picker.component';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    SpreadSheetsModule
+    SpreadSheetsModule,
+    DialogModule,
+    ColorPickerModule
   ],
   exports: [
     FcSheetComponent,
@@ -41,6 +46,7 @@ import { NumberBoardComponent } from './start-toolbar/number-board/number-board.
     StatusBarComponent,
   ],
   providers: [
-  ]
+  ],
+  entryComponents: [ClipboardComponent, ColorPickerComponent]
 })
 export class FcSheetModule { }

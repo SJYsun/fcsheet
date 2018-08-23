@@ -116,9 +116,10 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    &:hover {
-        background: #ddd;
-    }
+}
+
+.board-default-btn:hover {
+    background: #ddd;
 }
 
 .separator {
@@ -142,9 +143,10 @@ body {
     flex-direction: column;
     margin: 0 0 0 4px;
     cursor: pointer;
-    &:hover {
-        background: #ddd;
-    }
+}
+
+.board-btitle-btn:hover {
+    background: #ddd;
 }
 
 .board-btnsuffix-title {
